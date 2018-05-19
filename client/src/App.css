@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Knewave|Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+@import url('https://fonts.googleapis.com/css?family=Salsa');
+@import url('https://fonts.googleapis.com/css?family=Mogra');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Delius');
+@import url('https://fonts.googleapis.com/css?family=Kadwa');
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-top:0.5em
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display:none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.nighttrue{
+  background-color: rgb(25, 31, 61);
+  color: white;
+}
+.nightfalse{
+  background-color: rgb(25, 31, 61);
+  color: white;
+}
+
+.toggle_component{
+  float: right;
+  padding-right: 5em;
+}
+.fa-sun{
+  height: 2em ;
+  width: 2em ;
+}
+
+.fa-moon{
+  height: 2em ;
+  width: 2em ;
+}
+
+.nav_bar{
+  margin-top:1em ;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('https://www.bernardbeneito.com/wp-content/uploads/2018/03/nyc-photography-brooklyn-bridge-panorama-black-white-new-york-regarding-2017-metal-wall-art-new-york-city-skyline.jpg');
+  /* background-color: #222; */
+  /* Set a specific height */
+  height: 100px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.main_app_page_top{
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+}
+.main_app_page_bottom{
+  /* height: 30em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color:#444546;
+  background-color: white
+
+}
+
+
+.contact_button:focus {
+  outline: none;
+}
+
+.main_header{
+  /* position: fixed; */
+  top: 6em;
+  left: 2em;
+  font-family: 'Mogra', cursive;
+  font-size: 3em;
+  /* border-right:solid 1em #2196F3; */
+  align-items: center;
+
+}
+
+.intro{
+  /* position: fixed; */
+  /* height:10em;
+  width:10em; */
+  top: 14em;
+  left: 54em;
+}
+.title{
+  text-align: end
+} 
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.about_page{
+  /* padding-top: 3em;
+  padding-bottom: 5em;
+  width: 20em;
+  /* background-color: blue; */
+  /* margin-top: 3em;  */
+  /* align-self: center; */
+  margin-top: 3em;
+  margin-bottom: 3em;
+  color:#444546;
+  background-color: white
+}
+.about_content{
+  display: flex;
+  flex-direction:row;
+  justify-content:  space-evenly;
+}
+.about_section{
+  padding-top: 3em;
+  padding-bottom: 5em;
+  width: 20em;
+  /* background-color: blue; */
+  margin-top: 3em;
+  font-family: 'Delius', cursive;
+  text-align: center;
+  font-size: 1.2em
+}
+.about_skills{
+  padding-top: 3em;
+  padding-bottom: 5em;
+  width: 20em;
+  /* background-color: blue; */
+  margin-top: 3em;
+  font-family: 'Delius', cursive;
+  font-size: 1.2em
+}
+
+.projects_page{
+  /* display: inline-flex; */
+  /* flex-direction: row; */
+  display: flex;
+  background-color: 	#12828E;
+  padding-top: 5em;
+  /* height: 20em; */
+}
+.project1_div{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 3em;
+  padding-left: 3em;
+}
+.project2_div{
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+.project_picture{
+  /* padding-left: 8em; */
+  height: 85%;
+  width: 85%;
+}
+
+.project_description{
+  width: 50%;
+  font-family: 'Kadwa', serif;
+}
+
+.prof_nav_img{
+  width: 5%;
+}
+.proj_seperator{
+  border-bottom: 0.1em black solid;
+  width: 75% ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.proj_headline{
+  font-family: 'Bungee Shade', cursive;
+  position: relative;
+  /* left : 10em;
+  top : 1em; */
+  font-size: 2em;
+  color: white;
+  /* border-bottom: 0.1em white solid; */
+  text-align: center
+}
+
+.project_name{
+  text-align: left;
+  /* margin-left: 2em; */
+}
+.proj_headline2{
+  font-family: 'Bungee Shade', cursive;
+  position: relative;
+  /* left : 10em;
+  top : 1em; */
+  font-size: 2em;
+  /* border-bottom: 0.1em white solid; */
+  /* margin-bottom: 12em; */
+  /* padding-bottom: 5em; */
+  color: white;
+  text-align: center;
+  color:#444546;
+
+}
+
+.prof_links{
+  color:white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Delius', cursive;
+
+}
+.prof_links :hover{
+  color:white;
+}
+
+.footer{
+  height: 4em;
+  background-color: #222
+
+}
+.point {
+  width: 6px;
+  height: 6px;
+  background: tomato;
+  transition: width 0.5s ease;
+}
+
+.point:hover {
+  width: 200px;
+}
+
